@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.jtwaller.sqlite_demo.SQLContract.SQLEntry;
 
@@ -47,10 +48,13 @@ public class CreateActivity extends AppCompatActivity {
         values.put(SQLEntry.COLUMN_NAME_DATE_CREATED, date);
 //        values.put(SQLEntry.COLUMN_NAME_ENTRY_ID, SQLEntry._ID);
 
-        long newRowId;
-        newRowId = db.insert(SQLEntry.TABLE_NAME, null, values);
+//        long newRowId;
+//        newRowId = db.insert(SQLEntry.TABLE_NAME, null, values);
 
+        db.insert(SQLEntry.TABLE_NAME, null, values);
         Log.d(TAG, "putData");
+
+        Toast.makeText(this, "Entry created.", Toast.LENGTH_SHORT).show();
     }
 
 }
