@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Create Data"
         android:id="@+id/createActivityButton"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -25,5 +25,14 @@
         android:id="@+id/retrieveActivityButton"
         android:layout_below="@+id/createActivityButton"
         android:layout_alignStart="@+id/createActivityButton"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data"
+        android:id="@+id/dropTablesButton"
+        android:layout_below="@+id/retrieveActivityButton"
+        android:layout_alignStart="@+id/createActivityButton"
+        android:layout_marginTop="50dp" />
 </RelativeLayout>

@@ -43,6 +43,8 @@ public class CreateActivity extends AppCompatActivity {
         SQLiteHelper mSQLHelper = new SQLiteHelper(getApplicationContext());
         SQLiteDatabase db = mSQLHelper.getWritableDatabase();
 
+        Log.d(TAG, "putData: db:" + db.toString());
+
         long date = System.currentTimeMillis();
 
         values.put(SQLEntry.COLUMN_NAME_DATE_CREATED, date);
